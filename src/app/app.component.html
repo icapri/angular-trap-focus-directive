@@ -1,0 +1,44 @@
+<h1>Angular Trap Focus Directive</h1>
+<p style="font-weight:500;font-size:22px">
+  Once you focus an element inside the container with the directive
+  <span style="font-family: Consolas,monaco,monospace;font-size:14px"
+    >[mouTrapFocus]</span
+  >
+  you cannot navigate per
+  <span
+    style="font-family: Consolas,monaco,monospace;font-size:14px;font-weight:bold"
+    >Tab</span
+  >
+  or
+  <span
+    style="font-family: Consolas,monaco,monospace;font-size:14px;font-weight:bold"
+    >Shift+Tab</span
+  >
+  outside this container.
+</p>
+
+<div class="container">
+  Disabled input: <input disabled />
+  <br />
+  Enabled input: <input />
+  <br />
+  Inside the container with the
+  <span style="font-family: Consolas,monaco,monospace;font-size:14px"
+    >[mouTrapFocus]</span
+  >
+  applied:
+  <br />
+  <div mouTrapFocus>
+    Disabled input: <input disabled />
+    <br />
+    Enabled input: <input />
+    <br />
+    Enabled ddl:
+    <select>
+      <option>Some Option</option>
+    </select>
+    Disabled Button: <button disabled>Click Me!</button>
+    <br />
+    Enabled Button: <button>Click Me!</button>
+  </div>
+</div>
